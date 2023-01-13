@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style5.css">
     <script src="javag.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='Stylesheet'>
 </head>
@@ -35,7 +35,7 @@
           <ion-icon name="grid-outline"></ion-icon>
         </label>
 
-        <label class="logo">B&S Cars</label>
+        <label class="logo">BS Cars</label>
 
         <ul>
           <li><a href="#hero-section" class="active">Home</a></li>
@@ -43,12 +43,12 @@
           <li><a href="#menu">Menu</a></li>
           <!--<li><a href="#testimonial">Reviews</a></li>-->
           <li><a href="#about">Contact us</a></li>
-          <li><a href="#about">Upload car Images</a></li>
+          <!--<li><a href="#about">Upload car Images</a></li>
         
           <li><a href="https://maps.app.goo.gl/osn9yEqiunNLD6C66?g_st=it">Our Location</a></li>
         </ul>
       </nav>
-    </div>
+    </div>-->
     
                 
        
@@ -63,6 +63,84 @@
    <img src="https://hips.hearstapps.com/hmg-prod/images/2019-mercedes-benz-a220-4matic-mmp-1-1638557009.jpg?crop=0.998xw:0.750xh;0,0.130xh&resize=1200:*" alt="my base image" />
 
   
+
+
+
+
+
+   <html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <title>Search Filter</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <section class="container">
+        <section class="wrapper">
+            <h2>Search for cars!</h2>
+            <input type="search" id="search-box" onkeyup="mySearch()" placeholder="Search here" />
+            <section class="content">
+                <ul id="myItem">
+                  
+                  <li class="product"><!--<img src="http://lawkeshekapure.000webhostapp.com/demo/project1/batman_arkham_origins.png">-->
+                    <p>ALL CAR TYPES WE HAVE IN THE WEBSITE ARE HERE:</p></li>  
+                  <li class="product"><!--<img src="http://lawkeshekapure.000webhostapp.com/demo/project1/batman_arkham_origins.png">-->
+                        <p>1-TOYOTA</p></li>
+                   
+                    <li class="product">
+                        <p>2-HYUNDAI</p></li>
+                    
+                    <li class="product">
+                        <p>3-MERCEDES</p></li>
+                    
+                    <li class="product">
+                        <p>4-NISSAN</p></li> 
+                    
+                    <li class="product">
+                        <p>5-KIA</p></li>
+                    
+                    
+                    <li class="product">
+                        <p>6-DEER</p></li>
+                    
+                    <li class="product">
+                        <p>7-JEEP</p></li>
+                   
+                    <li class="product">
+                        <p>8-MG</p></li> 
+                   
+                    <li class="product">
+                        <p>9-OPEL</p></li>
+                    
+                    
+                </ul>
+            </section>
+        </section>
+        </section>
+        <script type="text/javascript">
+            function mySearch(){
+                var input,filter,ul,li,p,i;
+                input = document.getElementById("search-box");
+                filter = input.value.toUpperCase();
+
+                ul = document.getElementById("myItem");
+                li = ul.getElementsByTagName("li");
+
+                for(i=0; i < li.length; i++){
+                    
+                    p = li[i].getElementsByTagName("p")[0];
+                    
+                    if(p.innerHTML.toUpperCase().indexOf(filter) > -1){
+                        li[i].style.display = "";
+                    }
+                    else{
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
 
    <!-- Hero Section -->
    
@@ -109,7 +187,7 @@
             
               <div class="price">السعر|16000000.0مليون د.ع</div>
               <div class="order flex">
-              <a href="https://cars.usnews.com/cars-trucks/toyota/camry/photos-exterior" class="btn btn-menu">Check Now</a>
+              <a href="honda-car-honda-accord-incentives-specials-offers-moon-25.png" class="btn btn-menu">Check Now</a>
             </div>
           </div>
 
@@ -158,7 +236,7 @@
 
             <div class="order flex">
               <div class="price">17000000.00د.ع</div>
-              <a href="#" class="btn btn-menu">Order Now</a>
+              <a href="C:\Users\Administrator\Desktop\VSC File\Orderney_files\menu-2.jpg" class="btn btn-menu">Order Now</a>
             </div>
           </div>
 
@@ -285,8 +363,8 @@
 <div class="section" id="app">
     <div class="container flex">
       <div class="visual">
-        <img src="https://pictures.dealer.com/p/pristinemotorsportssmyrna/1731/cd45613f0a3163ea81cd13194c0ca251x.jpg?impolicy=resize&w=568" alt="" />
-      </div>
+        <!--<img src="https://pictures.dealer.com/p/pristinemotorsportssmyrna/1731/cd45613f0a3163ea81cd13194c0ca251x.jpg?impolicy=resize&w=568" alt="" />
+      </div>-->
 
      <!-- <div class="text">
         <h2 class="secondary">Soon Download The App </h2>
@@ -325,7 +403,7 @@
   <div class="section" id="about">
     <div class="container flex">
       <div class="visual">
-        <img src="https://www.thecarbuyinggroup.co.uk/images/car-sell-keys-webp.webp " alt="" />
+        <!--<img src="https://www.thecarbuyinggroup.co.uk/images/car-sell-keys-webp.webp " alt="" />-->
       </div>
       <div class="text">
         <div class="secondary"> ارفق صور سيارتك </div>
@@ -350,7 +428,7 @@
   
   
   
-  <!--2-NEW LIST FOR RENT CARS -->
+  <!--2-NEW LIST FOR RENT CARS 
   <div class="section" id="menu">
     <div class="container">
       <ul class="category">
@@ -470,13 +548,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
 
 
 
 
-<!--CODE FOR THE FORMS TO UPLOAD THE CAR RENT IMAGES-->
+<!--CODE FOR THE FORMS TO UPLOAD THE CAR RENT IMAGES
 
 
 
@@ -484,7 +562,7 @@
   <div class="container flex">
     <div class="visual">
       <img src="https://st4.depositphotos.com/16255066/26802/v/600/depositphotos_268023280-stock-illustration-vector-logo-for-car-rental.jpg" alt="" />
-    </div>
+    </div>-->
 
    <!-- <div class="text">
       <h2 class="secondary">Soon Download The App </h2>
@@ -511,16 +589,16 @@
       </div>
     </div>-->
 
-<div class="section" id="about">
+<!--<div class="section" id="about">
   <div class="container flex">
-    <div class="visual">
+    <div class="visual">-->
       <!--<img src="https://www.thecarbuyinggroup.co.uk/images/car-sell-keys-webp.webp " alt="" />-->
-    </div>
+    <!--</div>
     <div class="text">
-      <div class="secondary"> ارفق صور سيارتك </div>
+      <div class="secondary"> ارفق صور سيارتك </div>-->
       <!--<div class="secondary">here by clicking below!</div>-->
-      <li><a href="https://forms.gle/bLXdFuoS9apYfFvx9"><div class="secondary">Here : بالضغط هنا</div></a></li>
-
+     <!--<li><a href="https://forms.gle/bLXdFuoS9apYfFvx9"><div class="secondary">Here : بالضغط هنا</div></a></li>
+--->
       <!--<p>
         THE ORDERNY FOOD DELIVER WAS CREATED TO HELP SINJAR PEOPLE AND MAKE EASY DELIVERNIG FOOD IN BEST RESTAURANT IN SINJAR CREATE BY ASLAN MASTO IN 2022,THANKS
       </p>-->
@@ -541,7 +619,7 @@
 
 
 
-   <!--3-NEW LIST FOR LEARINING CARS -->
+   <!--3-NEW LIST FOR LEARINING CARS 
    <div class="section" id="menu">
     <div class="container">
       <ul class="category">
@@ -661,7 +739,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
 
 
@@ -671,11 +749,11 @@
 
 
 
-  <div class="section" id="app">
+  <!--<div class="section" id="app">
     <div class="container flex">
       <div class="visual">
         <img src="https://img.freepik.com/premium-vector/people-learning-driving-school-driving-exam-practice-concept-driving-school-students-passing-exams-vector-illustration-car-driving-school-concept-laptop-with-test-form-studying_229548-2434.jpg?w=1380" alt="" />
-      </div>
+      </div>-->
   
      <!-- <div class="text">
         <h2 class="secondary">Soon Download The App </h2>
@@ -702,16 +780,16 @@
         </div>
       </div>-->
   
-  <div class="section" id="about">
+  <!--<div class="section" id="about">
     <div class="container flex">
-      <div class="visual">
+      <div class="visual">-->
         <!--<img src="https://www.thecarbuyinggroup.co.uk/images/car-sell-keys-webp.webp " alt="" />-->
-      </div>
+      <!--</div>
       <div class="text">
-        <div class="secondary"> ارفق صور سيارتك </div>
+        <div class="secondary"> ارفق صور سيارتك </div>-->
         <!--<div class="secondary">here by clicking below!</div>-->
-        <li><a href="https://forms.gle/bLXdFuoS9apYfFvx9"><div class="secondary">Here : بالضغط هنا</div></a></li>
-  
+        <!--<li><a href="https://forms.gle/bLXdFuoS9apYfFvx9"><div class="secondary">Here : بالضغط هنا</div></a></li>
+        -->
         <!--<p>
           THE ORDERNY FOOD DELIVER WAS CREATED TO HELP SINJAR PEOPLE AND MAKE EASY DELIVERNIG FOOD IN BEST RESTAURANT IN SINJAR CREATE BY ASLAN MASTO IN 2022,THANKS
         </p>-->
@@ -745,7 +823,7 @@
           <li>Mob:+9647507288491</li>
           <!--<li>Fax:+9647507066692</li>-->
             <!--<li>Mob:+9647507288491</li>-->
-            <li>Email:Ordernysinjar@gmail.com</li>
+            <li>Email:BSCars@gmail.com</li>
             <ul>
               <li>FOLLOW US ON SOCIAL MEDIA</li>
               <a class="twitter-share-button"
@@ -762,9 +840,9 @@
             </ul>
             <h2>About:</h2>
             <p>
-              THE THE B&S Cars Website created to help sinjar community to buy and sell cars easily was founded in 2023,THANKS        
+              THE BS Cars Website created to help sinjar community to buy and sell cars easily was founded in 2023,THANKS        
               .IN 2023,THANKS  
-
+            </p>
       <!--<div class="footer-category">
         <h2>Our Menu(CAR LISTS):</h2>
 
@@ -796,6 +874,7 @@
         </ul>
       </div>
     </div>
+
    
   
 
@@ -824,7 +903,7 @@ WhatsApp</a><i class="fa fa-instagram"></i></a>
   
   
     <div class="copyright">
-      <p>Copyright &copy; 2023. ORDERNY Company.</p>
+      <p>Copyright &copy; 2023. BS Cars.</p>
       <p>All Rights Reserved.</p>
     </div>
   </div>
@@ -890,14 +969,8 @@ WhatsApp</a><i class="fa fa-instagram"></i></a>
 
 
 
+ok
 
-
-
-ok
-ok
-ok
-ok
-ok
 
 
 

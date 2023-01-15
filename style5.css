@@ -473,8 +473,7 @@
     text-align: right;
     font-weight: 300;
     box-sizing:border-box;
-    font-style: var(--bg-color);
-    font-size: large;
+   
    
   }
   
@@ -488,7 +487,7 @@
   
   .menu-item img {
     width: 100%;
-    height: fit-content;
+    
   }
   
   .order {
@@ -503,7 +502,7 @@
     background: #fff;
     border: 1px solid var(--clr-primary);
     color: var(--clr-primary);
-    font-style: bold;
+    
   }
   
   .title {
@@ -559,7 +558,7 @@
   
   .footer .container {
     justify-content: space-between;
-    align-items: flex-start;
+ 
   }
   
   .footer h2 {

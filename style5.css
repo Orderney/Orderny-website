@@ -502,7 +502,7 @@
     background: #fff;
     border: 1px solid var(--clr-primary);
     color: var(--clr-primary);
-    
+    font-style: bold;
   }
   
   .title {
@@ -550,15 +550,17 @@
   /* End App */
   
   /* Footer */
+   /* SOCIAL MEDIA ICONS */
   .footer {
     background: var(--clr-secondary);
     color: #b2b2b2;
     padding: 30px 0;
+    margin-top: 0;
   }
   
   .footer .container {
     justify-content: space-between;
- 
+    align-items: flex-start;
   }
   
   .footer h2 {

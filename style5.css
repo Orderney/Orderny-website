@@ -796,37 +796,65 @@
 
 
 
-  /* CSS Document */
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
-body {
-	
-	font-size:22px;
-	line-height: 32px;
 
-	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
-	}
-
-h1 {
-	font-size: 60px;
-	text-align: center;
-	color: #FFF;
-}	
-
-h3 {
-	font-size: 30px;
-	text-align: center;
-	color: #FFF;
+.dropdown {
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 3px;
+  width: 140px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
-h3 a {
-	color: #FFF;
+.fa-angle-down {
+  position: relative;
+  top: 2px;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
 }
 
-a {
-	color: #FFF;
+.rotate-dropdown-arrow {
+  transform: rotate(-180deg);
 }
 
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-top: 8px;
+  width: 160px;
+  padding: 10px;
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.3);
+  background: #fafafa;
+  transform-origin: top left;
+}
+
+.dropdown-menu span {
+  padding: 10px;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu span:hover {
+  background: #eee;
+}
+
+#openDropdown:checked + .dropdown-menu {
+  display: flex;
+  animation: openDropDown 0.4s ease 0s 1 forwards;
+}
+
+@keyframes openDropDown {
+  from { transform: rotateX(50deg); }
+  to { transform: rotateX(0deg); }
+}

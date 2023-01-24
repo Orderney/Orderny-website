@@ -796,4 +796,37 @@
 
 
 
-  
+  /* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+	
+	font-size:22px;
+	line-height: 32px;
+
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}	
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+

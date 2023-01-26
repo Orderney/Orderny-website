@@ -785,7 +785,7 @@
     
   }
  .myItem{
-  color: #ff8f0e;
+  color: #7c572d;
   font: 100;
   font-size: larger;
   justify-items: center;
@@ -796,65 +796,32 @@
 
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-
-
-.dropdown {
-  background: #f8f8f8;
-  padding: 10px;
-  border-radius: 3px;
-  width: 140px;
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.1rem;
-  cursor: pointer;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+ .wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.photobanner {
+	position: relative;
+	height: 233px;
+	margin-bottom: 30px;
+	display: flex;
+	width: 100%;
 }
 
-.fa-angle-down {
-  position: relative;
-  top: 2px;
-  font-size: 1.3rem;
-  transition: transform 0.3s ease;
+.photobanner img {
+  margin: 0px 25px;
+  box-shadow: 2px 2px 8px #8a8a8a;
 }
 
-.rotate-dropdown-arrow {
-  transform: rotate(-180deg);
+.photobanner {
+  animation: bannermove 50s linear infinite alternate-reverse;
 }
 
-.dropdown-menu {
-  display: none;
-  flex-direction: column;
-  border-radius: 4px;
-  margin-top: 8px;
-  width: 160px;
-  padding: 10px;
-  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.3);
-  background: #fafafa;
-  transform-origin: top left;
-}
-
-.dropdown-menu span {
-  padding: 10px;
-  flex-grow: 1;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.dropdown-menu span:hover {
-  background: #eee;
-}
-
-#openDropdown:checked + .dropdown-menu {
-  display: flex;
-  animation: openDropDown 0.4s ease 0s 1 forwards;
-}
-
-@keyframes openDropDown {
-  from { transform: rotateX(50deg); }
-  to { transform: rotateX(0deg); }
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2700px;
+  }
 }

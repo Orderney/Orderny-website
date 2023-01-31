@@ -449,6 +449,8 @@
     list-style: none;
     text-align: center;
     margin: 20px 0 40px 0;
+    font-style:italic ;
+    font-size: x-large;
   }
   
   .category li {
